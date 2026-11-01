@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #080d18;
+color: white;
+}
+
+/* NAVBAR */
+
+header {
+background: #0b1220;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.navbar {
+max-width: 1150px;
+margin: auto;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 28px;
+font-weight: bold;
+color: white;
+text-decoration: none;
+}
+
+.logo span {
+color: #00aaff;
+}
+
+.nav-links {
+display: flex;
+gap: 30px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #cbd5e1;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #00aaff;
+}
+
+/* HERO */
+
+.hero {
+min-height: 600px;
+max-width: 1150px;
+margin: auto;
+padding: 80px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+}
+
+.hero-text {
+max-width: 550px;
+}
+
+.welcome {
+color: #00aaff;
+letter-spacing: 3px;
+font-size: 13px;
+margin-bottom: 20px;
+}
+
+.hero-text h1 {
+font-size: 48px;
+margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+color: #00aaff;
+}
+
+.hero-text h2 {
+color: #94a3b8;
+font-size: 23px;
+}
+
+.description {
+color: #94a3b8;
+line-height: 1.8;
+margin: 25px 0;
+}
+
+.btn {
+display: inline-block;
+padding: 14px 25px;
+background: #008cff;
+color: white;
+text-decoration: none;
+border-radius: 8px;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #0066cc;
+transform: translateY(-4px);
+}
+
+/* PROFILE IMAGE */
+
+.hero-image {
+position: relative;
+width: 300px;
+height: 300px;
+flex-shrink: 0;
+}
+
+.hero-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 5px solid #00aaff;
+position: relative;
+z-index: 2;
+box-shadow: 0 0 35px #008cff55;
+}
+
+.circle {
+position: absolute;
+width: 330px;
+height: 330px;
+background: #008cff22;
+border-radius: 50%;
+top: -15px;
+left: -15px;
+filter: blur(15px);
+}
+
+/* SECTION */
+
+.section {
+max-width: 1100px;
+margin: auto;
+padding: 80px 20px;
+}
+
+.section-title {
+text-align: center;
+font-size: 35px;
+margin-bottom: 40px;
+}
+
+.section-title span {
+color: #00aaff;
+}
+
+/* ABOUT */
+
+.about-card {
+background: #111c30;
+padding: 35px;
+border-radius: 15px;
+border: 1px solid #1e3555;
+transition: 0.3s;
+}
+
+.about-card:hover {
+border-color: #00aaff;
+transform: translateY(-5px);
+}
+
+.about-card h3 {
+color: #00aaff;
+margin-bottom: 20px;
+}
+
+.about-card p {
+color: #b6c4d8;
+line-height: 1.9;
+}
+
+/* BIODATA */
+
+.biodata-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.info-card {
+background: #111c30;
+padding: 25px;
+border-radius: 12px;
+border: 1px solid #1e3555;
+transition: 0.3s;
+}
+
+.info-card:hover {
+transform: translateY(-6px);
+border-color: #00aaff;
+box-shadow: 0 5px 20px #008cff22;
+}
+
+.info-card h3 {
+color: #00aaff;
+font-size: 14px;
+margin-bottom: 12px;
+}
+
+.info-card p {
+color: #e2e8f0;
+font-size: 16px;
+}
+
+/* SKILLS */
+
+.skills-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.skill-card {
+text-align: center;
+background: #111c30;
+padding: 30px 15px;
+border-radius: 12px;
+border: 1px solid #1e3555;
+transition: 0.3s;
+}
+
+.skill-card:hover {
+transform: translateY(-7px);
+border-color: #00aaff;
+}
+
+.skill-card h3 {
+color: #00aaff;
+font-size: 22px;
+margin-bottom: 12px;
+}
+
+.skill-card p {
+color: #94a3b8;
+font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+text-align: center;
+padding: 30px;
+background: #0b1220;
+color: #64748b;
+line-height: 2;
+font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+.navbar {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero-text h1 {
+    font-size: 35px;
+}
+
+.hero-image {
+    width: 220px;
+    height: 220px;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+}
+
+.biodata-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 450px) {
+
+.biodata-grid {
+    grid-template-columns: 1fr;
+}
+
+.hero-text h1 {
+    font-size: 30px;
+}
+
+}
